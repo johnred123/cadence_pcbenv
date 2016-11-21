@@ -1,0 +1,25 @@
+source $TELENV
+
+funckey ww 'add connect'
+funckey dd 'delete'
+funckey ss 'slide'
+funckey mm 'move'
+funckey cc 'cancel'
+funckey rr 'rotate'
+funckey ff 'done'
+funckey _ 'subclass --'
+alias   renv 'source -q $localenv/env'
+funckey l06 'options acon_line_width 6'
+funckey l10 'options acon_line_width 10'
+funckey l15 'options acon_line_width 15'
+
+### User Preferences section
+### This section is computer generated.
+### Please do not modify to the end of the file.
+### Place your hand edits above this section.
+###
+set padpath = . symbols .. ../symbols E:/Work/Cadence/Cadence_SPB_16.6-2015/share/local/pcb/padstacks E:/Work/Cadence/Cadence_SPB_16.6-2015/share/pcb/pcb_lib/symbols E:/Work/Cadence/Cadence_SPB_16.6-2015/share/pcb/allegrolib/symbols E:/Work-Library/cadence/allegro_lib/padstacks/
+set psmpath = . symbols .. ../symbols E:/Work/Cadence/Cadence_SPB_16.6-2015/share/local/pcb/symbols E:/Work/Cadence/Cadence_SPB_16.6-2015/share/pcb/pcb_lib/symbols E:/Work/Cadence/Cadence_SPB_16.6-2015/share/pcb/allegrolib/symbols E:/Work-Library/cadence/allegro_lib/symbols/
+set infinite_cursor_bug_nt
+set pcb_cursor = octal
+unset logic_edit_enabled

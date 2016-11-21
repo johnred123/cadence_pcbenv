@@ -1,0 +1,39 @@
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM toolwindow
+	FIXED
+	PORT 40 30
+	HEADER "Subclass Selection"
+
+	TILE 
+		TEXT "Available Subclasses"
+			TLOC 12 1
+			OPTIONS bold
+		ENDTEXT
+
+		FIELD treeList
+			FLOC 3 3
+			TREEVIEW 33 14
+		ENDFIELD
+
+		FIELD DONE
+			FLOC 1 32
+			MENUBUTTON "Done" 13 3
+		ENDFIELD
+
+		FIELD CANCEL
+			FLOC 25 32
+			MENUBUTTON "Cancel" 13 3
+		ENDFIELD
+
+		FLEXMODE EdgeGravityOne
+		FLEX  treelist 0 0 1 1
+
+	ENDTILE
+
+ENDFORM
+
+
+
+
+
+

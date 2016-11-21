@@ -1,0 +1,95 @@
+FILE_TYPE=FORM_DEFN VERSION=2
+# skill axlFormTest("layerHotKey.form")
+
+FORM toolwindow
+	FIXED
+	PORT 65 80
+	HEADER "Layers Hotkeys"
+
+	POPUP <TREEPOP> "-" "1".
+
+	TILE 
+		GROUP "" "grp_all"
+			GLOC 1 0
+			GSIZE 63 29
+		ENDGROUP
+		
+# ------------- TREE -------------------
+		TEXT "Layer Groups"
+			TLOC 12 1
+			OPTIONS bold
+		ENDTEXT
+		
+		FIELD treeField
+			FLOC 3 3
+			TREEVIEW 29 11
+			POP "TREEPOP"
+		ENDFIELD
+
+# ------------- GRID -------------------
+		
+		TEXT "Hotkeys"
+			TLOC 46 1
+			OPTIONS bold
+		ENDTEXT
+		
+		GRID gridField
+			FLOC 35 3
+			FSIZE 26 22
+			OPTIONS HLINES VLINES  
+
+		ENDGRID
+
+		FIELD bnAddGroup
+			FLOC 11 26
+			MENUBUTTON "Add Layer Group" 12 3
+		ENDFIELD
+
+		FIELD bnDefault
+			FLOC 34 26
+			MENUBUTTON "Default" 8 3
+		ENDFIELD
+		FIELD bnImport
+			FLOC 44 26
+			MENUBUTTON "Import..." 8 3
+		ENDFIELD
+		FIELD bnExport
+			FLOC 54 26
+			MENUBUTTON "Export..." 8 3
+		ENDFIELD
+		
+# ------------- COMMON -------------------
+		FIELD bnOk
+			FLOC 3 30
+			MENUBUTTON "OK" 9 4
+		ENDFIELD
+		FIELD bnApply
+			FLOC 15 30
+			MENUBUTTON "Apply" 9 4
+		ENDFIELD
+		FIELD bnCancel
+			FLOC 27 30
+			MENUBUTTON "Cancel" 9 4
+		ENDFIELD
+
+		FIELD bnHelp
+			FLOC 52 30
+			MENUBUTTON "Help" 9 4
+		ENDFIELD
+
+		FLEXMODE EdgeGravityOne
+		FLEX grp_all 0 0 1 1
+		FLEX treeField 0 0 1 1
+		FLEX gridField 1 0 0 1
+		FLEX bnAddView 0.5 1 0 0
+		FLEX bnDefault 1 1 0 0
+		FLEX bnImport 1 1 0 0
+		FLEX bnExport 1 1 0 0
+		FLEX bnHelp 1 1 0 0
+		
+
+	ENDTILE
+
+ENDFORM
+
+ 
