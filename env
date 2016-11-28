@@ -20,6 +20,9 @@ funckey l15 'options acon_line_width 15'
 ###
 set padpath = . symbols .. ../symbols E:/Work/Cadence/Cadence_SPB_16.6-2015/share/local/pcb/padstacks E:/Work/Cadence/Cadence_SPB_16.6-2015/share/pcb/pcb_lib/symbols E:/Work/Cadence/Cadence_SPB_16.6-2015/share/pcb/allegrolib/symbols E:/Work-Library/cadence/allegro_lib/padstacks/
 set psmpath = . symbols .. ../symbols E:/Work/Cadence/Cadence_SPB_16.6-2015/share/local/pcb/symbols E:/Work/Cadence/Cadence_SPB_16.6-2015/share/pcb/pcb_lib/symbols E:/Work/Cadence/Cadence_SPB_16.6-2015/share/pcb/allegrolib/symbols E:/Work-Library/cadence/allegro_lib/symbols/
+unset allegro_dynam_timing
+set allegro_etch_length_on
+set allegro_dynam_timing_fixedpos
 set infinite_cursor_bug_nt
 set pcb_cursor = octal
 unset logic_edit_enabled
