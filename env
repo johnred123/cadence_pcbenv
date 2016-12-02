@@ -16,6 +16,7 @@ funckey ~M 'mirror'
 funckey _ 'subclass --'
 alias   renv 'source -q $localenv/env'
 funckey l06 'options acon_line_width 6'
+funckey l08 'options acon_line_width 8'
 funckey l10 'options acon_line_width 10'
 funckey l15 'options acon_line_width 15'
 funckey l20 'options acon_line_width 20'
@@ -33,4 +34,4 @@ set allegro_etch_length_on
 unset allegro_dynam_timing_fixedpos
 set infinite_cursor_bug_nt
 set pcb_cursor = octal
-unset logic_edit_enabled
+set logic_edit_enabled

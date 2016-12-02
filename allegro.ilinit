@@ -1,1 +1,9 @@
-(load "E:/Work/LibraryBuilder/setup/skill/builder.ile")
+(load "D:/cadence/LibraryBuilder/setup/skill/builder.ile")
+
+(loadi "skills/Kapustin-align/align.il")
+(loadi "skills/Kapustin-align/align_do.il")
+(loadi "skills/Kapustin-align/align_utils.il")
+(axlSetVariable "formpath" (strcat axlGetVariable("formpath") " D:/cadence/Cadence/Cadence/SPB_Data/pcbenv/skills/Kapustin-align"))
+(axlSetVariable "bmppath" (strcat axlGetVariable("bmppath") " D:/cadence/Cadence/Cadence/SPB_Data/pcbenv/skills/Kapustin-align/icon"))
+
+(loadi "skills/quick_artwork.il")

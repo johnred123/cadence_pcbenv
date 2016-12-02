@@ -129,6 +129,7 @@ defun( alnExit ()
 defun( alnInitForm () ;
 let( (units multiplier)
 when( (axlIsDebug) axlMsgPut("alnInitForm"))
+	;(print simplifyFilename("align.il"))
 	_alnFormPtr = axlMiniStatusLoad( (gensym) "align.form" '_parmCallBack)
 	;_alnFormPtr = axlFormCreate( (gensym) "align.form" '(ne canvas msglines 0) '_parmCallBack t)
 	units = axlDBGetDesignUnits()
